@@ -24,7 +24,7 @@
 #import "BVReorderTableView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface BVReorderTableView ()
+@interface BVReorderTableView () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) CADisplayLink *scrollDisplayLink;
 @property (nonatomic, assign) CGFloat scrollRate;
