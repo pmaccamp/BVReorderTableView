@@ -26,7 +26,6 @@
 
 @interface BVReorderTableView ()
 
-@property (nonatomic, strong) UILongPressGestureRecognizer *longPress;
 @property (nonatomic, strong) CADisplayLink *scrollDisplayLink;
 @property (nonatomic, assign) CGFloat scrollRate;
 @property (nonatomic, strong) NSIndexPath *currentLocationIndexPath;
