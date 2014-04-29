@@ -24,7 +24,7 @@
 #import "BVReorderTableView.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface BVReorderTableView () <UIGestureRecognizerDelegate>
+@interface BVReorderTableView ()
 
 @property (nonatomic, strong) CADisplayLink *scrollDisplayLink;
 @property (nonatomic, assign) CGFloat scrollRate;
@@ -93,10 +93,6 @@
 - (void)setCanReorder:(BOOL)canReorder {
     canReorder = canReorder;
     longPress.enabled = canReorder;
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-    return YES;
 }
 
 - (void)longPress:(UILongPressGestureRecognizer *)gesture {
