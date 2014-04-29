@@ -95,6 +95,9 @@
     longPress.enabled = canReorder;
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    return YES;
+}
 
 - (void)longPress:(UILongPressGestureRecognizer *)gesture {
     
