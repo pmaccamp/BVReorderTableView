@@ -43,6 +43,7 @@
 
 @interface BVReorderTableView : UITableView
 
+@property (nonatomic, strong) UILongPressGestureRecognizer *longPress;
 @property (nonatomic, assign) id <ReorderTableViewDelegate> delegate;
 @property (nonatomic, assign) CGFloat draggingRowHeight;
 @property (nonatomic, assign) CGFloat draggingViewOpacity;
